@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+   font-family: 'Roboto', sans-serif;
+}
+.title {
+   font-family: 'Barlow Condensed'!important;
+}
+.search-div {
+   justify-content: center;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.movie-title {
+  line-height: 1rem;
+}
+
+.rating {
+  position: absolute!important;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-top: -20px!important;
+  z-index: 2;
+}
+.genre {
+  padding: 2px 4px;
+}
+.movie-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-card {
+  /* margin-right: 1rem; */
+  /* width: 22%; */
+  width: 90%;
+  min-width: 7.2rem;
+}
+.movie-img-cover {height: 15rem;}
+@media screen and (min-width:335px) {
+  .movie-card {
+    width: 46.0%;
+  }
+  .movie-img-cover {
+    height: 14rem;
+  }
+  .movie-wrapper {
+    gap: 0.75rem;
+  }
+}
+
+@media screen and (min-width:500px) {
+  .movie-card {
+    width: 31.6%;
+  }
+  .movie-img-cover {
+    height: 14rem;
+  }
+}
+
+@media screen and (min-width:700px) {
+  .movie-card {
+    width: 23.29%;
+  }
+  .movie-img-cover {
+    height: 400%;
+  }
+  .movie-wrapper {
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (min-width:1040px) {
+  .movie-card {
+    width: 18.4%;
+  }
+  .movie-img-cover {
+    height: 17.425rem;
+  }
+  .movie-wrapper {
+    gap: 1.2rem;
+  }
+}
